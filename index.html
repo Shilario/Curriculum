@@ -2,10 +2,9 @@
 <html>
 <head>
 	<title>Stephannie Hilario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/helper.js"></script>
-	<script type="text/javascript" src="js/resumeBuilder.js"></script>
 </head>
 <body>
 	<div id="main">
@@ -36,20 +35,23 @@
 	        <ul id="footerContacts" class="flex-box"></ul>
     	</div>
     </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/helper.js"></script>
+	<script type="text/javascript" src="js/resumeBuilder.js"></script>
 	<script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('mapDiv'), {
-          center: {lat: 19.479196, lng: -70.693057},
-          zoom: 8
-        });
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('mapDiv'), {
+			  center: {lat: 19.479196, lng: -70.693057},
+			  zoom: 8
+			});
 
-        var marker = new google.maps.Marker({
-          position: {lat: 19.479196, lng: -70.693057},
-          map: map
-        });
-      }
+			var marker = new google.maps.Marker({
+			  position: {lat: 19.479196, lng: -70.693057},
+			  map: map
+			});
+		}
     </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWw2aVRbLXXBrPyF8-iIyASQmyisRie8&callback=initMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_M48PnkApK9oOFctvGCXUTsukXw7TSZ0&callback=initMap"></script>
 </body>
 </html>
