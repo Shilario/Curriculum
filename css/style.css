@@ -1,0 +1,162 @@
+#mapDiv {
+	height: 400px;
+    width: 100%;
+}
+
+html, body {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+	display: inline-flex;
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+
+img {
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+}
+
+hr {
+	order: 3;
+	margin-top: 0px;
+	width: 100%;
+}
+
+h2 {
+	color: #7f9094;
+}
+
+a {
+	color: #72bcd4;
+	display: block;
+}
+
+#main {
+	width: 100%;
+}
+
+#header {
+	background-color: #363636;
+	padding: 50px 50px;
+	margin-bottom: 0px;
+}
+
+#name {
+	color: #eea44e;
+	margin-bottom: 0px;
+	display: inline-flex;
+}
+
+#topContacts {
+	width: 100%;
+}
+
+#skills-h3 {
+	color: #eea44e;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 0px;
+	position: relative;
+	left: 215px;
+	top: -150px
+}
+
+#skills {
+	list-style-type: none;
+	position: relative;
+	left: 175px;
+	top: -150px
+}
+
+#projects img {
+	max-width: 200px;
+	height: auto;
+	display: inline-flex;
+	margin-left: 10px;
+}
+
+#education {
+	padding-top: 0px;
+}
+
+#lets-connect {
+	width: 100%;
+}
+#footerContacts {
+	background-color: #363636;
+	width: 100%;
+	margin-top: 0px;
+	box-sizing: border-box;
+}
+
+#projects {
+	padding: 10px 20px;
+}
+
+.gray {
+	background-color: #c7d2bd;
+	margin-top: 0px;
+	padding: 10px 20px;
+}
+
+.flex-box {
+	display: inline-flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.orange-text {
+	color:#eea44e;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.biopic {
+	width: 200px;
+}
+
+.welcome-message {
+	padding-left: 5px;
+	color: #fff;
+	vertical-align: top;
+	height: auto;
+}
+
+.date-text {
+	color: #aaaaaa;
+	display: inline-flex;
+	position: absolute;
+	left: 20px;
+	margin-bottom: 0px;
+	font-style: italic;	
+}
+
+.location-text {
+	color: #aaaaaa;
+	display: inline-flex;
+	position: absolute;
+	right: 10px;
+	margin-bottom: 0px;
+	font-style: italic;
+}
+
+.orange {
+	background-color: #eea44e;
+	margin-bottom: 0px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+
+}

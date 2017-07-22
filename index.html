@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stephannie Hilario</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/helper.js"></script>
+	<script type="text/javascript" src="js/resumeBuilder.js"></script>
+</head>
+<body>
+	<div id="main">
+		
+		<div id="header" class="center-content clear-fix">
+      		<ul id="topContacts" class="flex-box"></ul>
+    	</div>
+	    <div style="clear: both;"></div>
+	    
+	    <div id="workExperience" class="gray">
+	      <h2>Work Experience</h2>
+	    </div>
+	    
+	    <div id="projects">
+	      <h2>Projects</h2>
+	    </div>
+	    
+	    <div id="education" class="gray">
+	      <h2>Education</h2>
+	    </div>
+	    
+	    <div id="mapDiv">
+	      <h2>Where I've Lived and Worked</h2>
+	    </div>
+	    
+	    <div id="lets-connect" class="dark-gray">
+	      <h2 class="orange center-text">Let's Connect</h2>
+	        <ul id="footerContacts" class="flex-box"></ul>
+    	</div>
+    </div>
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mapDiv'), {
+          center: {lat: 19.479196, lng: -70.693057},
+          zoom: 8
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 19.479196, lng: -70.693057},
+          map: map
+        });
+      }
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWw2aVRbLXXBrPyF8-iIyASQmyisRie8&callback=initMap"></script>
+</body>
+</html>
