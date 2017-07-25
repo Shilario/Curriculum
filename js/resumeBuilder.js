@@ -1,6 +1,5 @@
 var work = {
-    "jobs" : [
-        {
+    "jobs": [{
             "employer": "SoulCycle",
             "title": "Developer",
             "location": "NY",
@@ -15,44 +14,44 @@ var work = {
             "description": "Work as a developer for desktop apps. I was a PowerBuilder developer for a year there"
         }
     ],
-    "display" : function () {
+    "display": function() {
         work.jobs.forEach(function(job) {
-        $('#workExperience').append(HTMLworkStart);
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", job.employer);
+            $('#workExperience').append(HTMLworkStart);
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", job.employer);
 
-        var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
+            var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
 
-        var formattedEmployerTitle = formattedEmployer + formattedTitle;
-        $(".work-entry:last").append(formattedEmployerTitle);
+            var formattedEmployerTitle = formattedEmployer + formattedTitle;
+            $(".work-entry:last").append(formattedEmployerTitle);
 
-        var formattedDate = HTMLworkDates.replace("%data%", job.dates);
-        $(".work-entry:last").append(formattedDate);
+            var formattedDate = HTMLworkDates.replace("%data%", job.dates);
+            $(".work-entry:last").append(formattedDate);
 
-        var formattedLocation = HTMLworkLocation.replace("%data%", job.location);
-        $(".work-entry:last").append(formattedLocation);
+            var formattedLocation = HTMLworkLocation.replace("%data%", job.location);
+            $(".work-entry:last").append(formattedLocation);
 
-        var formattedDescription = HTMLworkDescription.replace("%data%", job.description);
-        $(".work-entry:last").append(formattedDescription);
-    });
+            var formattedDescription = HTMLworkDescription.replace("%data%", job.description);
+            $(".work-entry:last").append(formattedDescription);
+        });
     }
 };
 
 var bio = {
-    "name" : "Stephannie Hilario",
-    "role" : "Web Developer",
-    "contacts" : {
-        "mobile" : "829-908-0404",
-        "email" : "hilariostephannie@gmail.com",
-        "github" : "shilario",
-        "twitter" : "@StephanieHT",
-        "location" : "Santiago, RD."
+    "name": "Stephannie Hilario",
+    "role": "Web Developer",
+    "contacts": {
+        "mobile": "829-908-0404",
+        "email": "hilariostephannie@gmail.com",
+        "github": "shilario",
+        "twitter": "@StephanieHT",
+        "location": "Santiago, RD."
     },
-    "welcomeMessage" : "I'm a engeneer in telecomunication whose job for the last couple of years have been as a developer in different technologies.",
-    "skills" : [
+    "welcomeMessage": "I'm a engeneer in telecomunication whose job for the last couple of years have been as a developer in different technologies.",
+    "skills": [
         "PHP", "MySql", "Backbone JS", "JavaScript", "Python Django", "PowerBuilder", "Docker"
     ],
-    "bioPic" : "images/cool-pic.jpg",
-    "display" : function () {
+    "bioPic": "images/cool-pic.jpg",
+    "display": function() {
         var formattedMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
         $("#topContacts:last").append(formattedMobile);
 
@@ -74,7 +73,7 @@ var bio = {
         var formattedWelcomeMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
         $("#header:last").append(formattedWelcomeMsg);
 
-        if (bio.skills.length > 0 ) {
+        if (bio.skills.length > 0) {
             $('#header').append(HTMLskillsStart);
             bio.skills.forEach(function(skill) {
                 var formattedSkill = HTMLskills.replace("%data%", skill);
@@ -85,33 +84,30 @@ var bio = {
 };
 
 var education = {
-    "schools" : [
-        {
-            "name" : "Udacity - Front-End Web Developer Nanodegree",
-            "location" : "Santiago",
-            "degree" : "Front-End Web Developer",
-            "majors" : ["CS"],
-            "dates" : "May 2017 - Current",
-            "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+    "schools": [{
+            "name": "Udacity - Front-End Web Developer Nanodegree",
+            "location": "Santiago",
+            "degree": "Front-End Web Developer",
+            "majors": ["CS"],
+            "dates": "May 2017 - Current",
+            "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         },
         {
-            "name" : "Udacity - Front-End Web Developer Nanodegree",
-            "location" : "Santiago",
-            "degree" : "Front-End Web Developer",
-            "majors" : ["CS"],
-            "dates" : "May 2017 - Current",
-            "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+            "name": "Udacity - Front-End Web Developer Nanodegree",
+            "location": "Santiago",
+            "degree": "Front-End Web Developer",
+            "majors": ["CS"],
+            "dates": "May 2017 - Current",
+            "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         }
     ],
-    "onlineCourses" : [
-        {
-            "title" : "Front-End Web Developer",
-            "school" : "Udacity",
-            "dates" : "2017",
-            "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-        }
-    ],
-    "display" : function () {
+    "onlineCourses": [{
+        "title": "Front-End Web Developer",
+        "school": "Udacity",
+        "dates": "2017",
+        "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+    }],
+    "display": function() {
         $('#education').append(HTMLschoolStart);
 
         education.schools.forEach(function(school) {
@@ -124,7 +120,7 @@ var education = {
             var formatteSchoolLocation = HTMLschoolLocation.replace('%data%', school.location);
             $(".education-entry:last").append(formatteSchoolLocation);
 
-            for(var index = 0; index < school.majors.length; index++) {
+            for (var index = 0; index < school.majors.length; index++) {
                 var formatteSchoolMajor = HTMLschoolMajor.replace('%data%', school.majors);
                 $(".education-entry:last").append(formatteSchoolMajor);
             }
@@ -148,27 +144,26 @@ var education = {
 };
 
 var projects = {
-    "project" : [
-        {
-            "title" : "Sample Project 1",
-            "dates" : "2017",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "images" : [
+    "project": [{
+            "title": "Sample Project 1",
+            "dates": "2017",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "images": [
                 "images/cool-pic.jpg",
                 "images/cool-pic.jpg"
             ]
         },
         {
-            "title" : "Sample Project 1",
-            "dates" : "2017",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "images" : [
+            "title": "Sample Project 1",
+            "dates": "2017",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "images": [
                 "images/cool-pic.jpg",
                 "images/cool-pic.jpg"
             ]
         }
     ],
-    "display" : function () {
+    "display": function() {
         $('#projects').append(HTMLprojectStart);
 
         projects.project.forEach(function(project) {
@@ -181,20 +176,20 @@ var projects = {
             var formattedProjectsDescription = HTMLprojectDescription.replace('%data%', project.description);
             $(".project-entry:last").append(formattedProjectsDescription);
 
-            for(var index = 0; index < project.images.length; index++) {
+            for (var index = 0; index < project.images.length; index++) {
                 var formattedImage = HTMLprojectImage.replace('%data%', project.images[index]);
                 $('.project-entry').append(formattedImage);
             }
         });
     }
- };
+};
 
-$(document).ready(function(){
+$(document).ready(function() {
     var formattedName = HTMLheaderName.replace('%data%', bio.name);
     var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
     $('#header').prepend(formattedRole);
     $('#header').prepend(formattedName);
-    
+
     bio.display();
     work.display();
     projects.display();
@@ -206,7 +201,7 @@ $(document).ready(function(){
 
 });
 
-function displayFooter(){
+function displayFooter() {
     var formattedMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
     $("#footerContacts:last").append(formattedMobile);
 
